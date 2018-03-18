@@ -1,0 +1,43 @@
+.big-button {
+  background: #1c88bf;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 7px 20px;
+  color: white;
+  font-weight: bold;
+  font-size: $l-size;
+  margin-bottom: $m-size;
+  padding: 2.4rem;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.big-button:hover {
+  transform: translateY(-5px);
+}
+
+.big-button:disabled {
+  opacity: 0.5;
+}
+
+.button {
+  background: #1c88bf;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 7px 20px;
+  color: white;
+  font-weight: 500;
+  padding: $s-size;
+}
+
+.button--link {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #666;
+  padding: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .big-button {
+    margin-bottom: $xl-size;
+  }
+}
